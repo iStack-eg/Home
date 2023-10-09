@@ -30,6 +30,7 @@
     }
 }
 
+
 @media (max-width:990px) {
     .ServicesCard{
         max-width: 500px;
@@ -40,6 +41,12 @@
     .RightNav{
         display: none;
     }
+
+
+    .toggle-btn{
+        display: flex;
+    }
+
     .FirstSection{
         padding-top: 30px !important;
     }

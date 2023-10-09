@@ -2,8 +2,13 @@ var nav = document.querySelector('nav');
 var navItem= document.querySelectorAll('.RightNav ul li a');
 var fadeImage = document.querySelector(".RightImageEdited");
 var loading = document.querySelector('.loading');
+var togBtn = document.querySelector(".toggle-btn");
+var sideBar = document.querySelector(".SideNav");
 
-
+    togBtn.addEventListener("click" , ()=>{
+        sideBar.classList.toggle("ActiveSideBar");
+        
+    });
 
 var ops= 0;
 window.addEventListener('load', () => {
@@ -18,6 +23,11 @@ window.addEventListener('load', () => {
     },50)
   });
     window.onscroll = function() {
+        if(sideBar.classList.contains("ActiveSideBar")){
+            sideBar.classList.remove("ActiveSideBar");
+        }
+
+        
     // var scrollPosition = window.scrollY;
     // var threshold = 10;
     
