@@ -92,3 +92,7 @@ $(document).ready(function(){
 });
 
 
+var TalkBtn = document.querySelector(".TalkBtn");
+TalkBtn.addEventListener('click' ,()=>{
+    window.location.href="https://www.facebook.com/messages/t/140616375794677/";
+})
